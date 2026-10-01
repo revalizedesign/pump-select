@@ -1,0 +1,3324 @@
+{
+  "cards": [
+    {
+      "fields": [
+        {
+          "alias": "Customer",
+          "label": "Customer",
+          "readonly": true
+        },
+        {
+          "alias": "Customer reference",
+          "label": "Customer reference",
+          "readonly": true
+        },
+        {
+          "alias": "Item number",
+          "label": "Item",
+          "value": "003"
+        },
+        {
+          "alias": "Service",
+          "label": "Service"
+        },
+        {
+          "alias": "Quantity",
+          "label": "Quantity",
+          "value": "1"
+        },
+        {
+          "alias": "Quote number",
+          "label": "Quote",
+          "readonly": true,
+          "value": "12365"
+        },
+        {
+          "alias": "Industry",
+          "label": "Industry",
+          "options": [
+            "All",
+            "Agriculture",
+            "Chemical process",
+            "General industry",
+            "Hydro carbon process",
+            "Mining",
+            "Oil and gas",
+            "Pulp and paper",
+            "Pipeline",
+            "Power",
+            "Water"
+          ]
+        },
+        {
+          "alias": "Product Classification",
+          "label": "Pump type",
+          "options": [
+            "All",
+            "Overhung, flexibly coupled, horizontal and vertical",
+            "Overhung, rigidly coupled, vertical",
+            "Overhung, close coupled, horizontal and vertical",
+            "Between bearings, one and two stage, axially split",
+            "Between bearings, one and two stage, radially split",
+            "Between bearings, multistage, axially split",
+            "Between bearings, multistage, radially split",
+            "Between bearings, multistage, barrel",
+            "Vertically suspended, discharge through column",
+            "Vertically suspended, separate discharge (sump)",
+            "Vertically suspended, canned",
+            "Submersible",
+            "Self priming",
+            "Rotary",
+            "Non-metallic",
+            "Sealless",
+            "Slurry or abrasive"
+          ]
+        },
+        {
+          "alias": "Orientation",
+          "label": "Orientation",
+          "options": [
+            "All",
+            "Horizontal",
+            "Vertical"
+          ]
+        }
+      ],
+      "id": "item",
+      "title": "Item"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Flow, rated",
+          "label": "Flow",
+          "unit": "USgpm",
+          "value": "100"
+        },
+        {
+          "alias": "Differential head / pressure, rated",
+          "label": "Head",
+          "unit": "ft",
+          "value": "100"
+        },
+        {
+          "alias": "Site Supply Frequency",
+          "label": "Frequency",
+          "options": [
+            "60 Hz",
+            "50 Hz"
+          ]
+        },
+        {
+          "alias": "Search criteria",
+          "label": "Speeds",
+          "options": [
+            "All suitable speeds",
+            "Set synchronous speed",
+            "Set synchronous speed limits",
+            "Set actual speed",
+            "Non-VFD variable speed, maximum diameter",
+            "Variable frequency, maximum diameter",
+            "Set actual speed limits"
+          ]
+        },
+        {
+          "alias": "Synchronous speed",
+          "label": "Synchronous speed",
+          "options": [
+            "~3600 rpm",
+            "~1800 rpm",
+            "~1200 rpm",
+            "~900 rpm",
+            "~720 rpm",
+            "~600 rpm",
+            "~515 rpm",
+            "~450 rpm",
+            "~400 rpm",
+            "~360 rpm",
+            "~327 rpm",
+            "~300 rpm",
+            "~276 rpm",
+            "~257 rpm",
+            "~240 rpm"
+          ],
+          "showIf": [
+            "Speeds",
+            "Set synchronous speed"
+          ],
+          "value": "~1800 rpm"
+        },
+        {
+          "alias": "Sync. speed limits (min / max)",
+          "label": "Min sync speed",
+          "options": [
+            "~3600 rpm",
+            "~1800 rpm",
+            "~1200 rpm",
+            "~900 rpm",
+            "~720 rpm",
+            "~600 rpm",
+            "~515 rpm",
+            "~450 rpm",
+            "~400 rpm",
+            "~360 rpm",
+            "~327 rpm",
+            "~300 rpm",
+            "~276 rpm",
+            "~257 rpm",
+            "~240 rpm"
+          ],
+          "showIf": [
+            "Speeds",
+            "Set synchronous speed limits"
+          ],
+          "value": "~1800 rpm"
+        },
+        {
+          "alias": "Sync. speed limits (min / max)",
+          "label": "Max sync speed",
+          "options": [
+            "~3600 rpm",
+            "~1800 rpm",
+            "~1200 rpm",
+            "~900 rpm",
+            "~720 rpm",
+            "~600 rpm",
+            "~515 rpm",
+            "~450 rpm",
+            "~400 rpm",
+            "~360 rpm",
+            "~327 rpm",
+            "~300 rpm",
+            "~276 rpm",
+            "~257 rpm",
+            "~240 rpm"
+          ],
+          "showIf": [
+            "Speeds",
+            "Set synchronous speed limits"
+          ],
+          "value": "~3600 rpm"
+        },
+        {
+          "alias": "Actual speed",
+          "label": "Speed",
+          "showIf": [
+            "Speeds",
+            "Set actual speed"
+          ],
+          "unit": "rpm",
+          "value": "0"
+        },
+        {
+          "alias": "Actual speed limits (min / max)",
+          "label": "Min speed",
+          "showIf": [
+            "Speeds",
+            "Set actual speed limits"
+          ],
+          "unit": "rpm",
+          "value": "0"
+        },
+        {
+          "alias": "Actual speed limits (min / max)",
+          "label": "Max speed",
+          "showIf": [
+            "Speeds",
+            "Set actual speed limits"
+          ],
+          "unit": "rpm",
+          "value": "0"
+        },
+        {
+          "alias": "Set frequency limits (min / max)",
+          "label": "Min frequency",
+          "showIf": [
+            "Speeds",
+            "Variable frequency, maximum diameter"
+          ],
+          "unit": "Hz",
+          "value": "0.0"
+        },
+        {
+          "alias": "Set frequency limits (min / max)",
+          "label": "Max frequency",
+          "showIf": [
+            "Speeds",
+            "Variable frequency, maximum diameter"
+          ],
+          "unit": "Hz",
+          "value": "0.0"
+        }
+      ],
+      "id": "duty",
+      "title": "Duty point"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Sealing options",
+          "label": "Sealing",
+          "options": [
+            "Auto",
+            "Single mechanical seal",
+            "Double mechanical seal",
+            "Tandem mechanical seal",
+            "No Seal Used"
+          ]
+        },
+        {
+          "alias": "Casing/Impeller Construction",
+          "label": "Casing/impeller",
+          "options": [
+            "Auto",
+            "Grey cast iron",
+            "Nodular cast iron",
+            "Carbon steel",
+            "304 stainless steel",
+            "316 stainless steel",
+            "316L stainless steel",
+            "317 stainless steel",
+            "Alloy 20",
+            "CD4MCu",
+            "Zirconium",
+            "Monel 400",
+            "Nickel",
+            "Hastelloy B",
+            "Hastelloy C"
+          ]
+        },
+        {
+          "alias": "Impeller material",
+          "label": "Impeller material",
+          "options": [
+            "Cast iron",
+            "Stainless steel",
+            "Alloy 20"
+          ]
+        },
+        {
+          "alias": "Clearance options",
+          "label": "Clearance",
+          "options": [
+            "Standard clearances",
+            "Open wear rings (standard)",
+            "Open wear rings (API 610)"
+          ]
+        },
+        {
+          "alias": "Test numeric product option",
+          "label": "Test numeric option",
+          "unit": "in",
+          "value": "0.79"
+        },
+        {
+          "alias": "Run out extension",
+          "label": "Run out extension",
+          "options": [
+            "None",
+            "Extend by 5%",
+            "Extend by 10%",
+            "Extend by 15%"
+          ]
+        },
+        {
+          "alias": "Test acceptance grade",
+          "label": "Test acceptance",
+          "options": [
+            "None",
+            "Hyd Ins 14.6 Bilateral (1B)",
+            "Hyd Ins 14.6 Bilateral (2B)",
+            "Hyd Ins 14.6 Bilateral (3B)",
+            "Hyd Ins 14.6 Bilateral (1E)",
+            "Hyd Ins 14.6 Bilateral (1U)",
+            "Hyd Ins 14.6 Bilateral (2U)"
+          ]
+        },
+        {
+          "alias": "Magnetic coupling? *",
+          "checked": false,
+          "label": "Magnetic coupling"
+        },
+        {
+          "alias": "Mag coupling length",
+          "label": "Coupling length",
+          "options": [
+            "Auto",
+            "0mm"
+          ],
+          "showIf": [
+            "Magnetic coupling",
+            true
+          ]
+        }
+      ],
+      "id": "options",
+      "title": "Product line options"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Suction pressure, rated / max",
+          "label": "Suction pressure rated",
+          "unit": "psig",
+          "value": "0.00"
+        },
+        {
+          "alias": "Suction pressure, rated / max",
+          "label": "Suction pressure max",
+          "unit": "psig",
+          "value": "0.00"
+        },
+        {
+          "alias": "NPSH available, rated",
+          "label": "NPSH available",
+          "unit": "ft",
+          "value": "Ample"
+        },
+        {
+          "alias": "Quantity of pumps in parallel",
+          "label": "Pumps in parallel",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+          ]
+        },
+        {
+          "alias": "Minimum bypass flow",
+          "label": "Min bypass flow",
+          "unit": "USgpm",
+          "value": "0.00"
+        }
+      ],
+      "id": "constraints",
+      "title": "Operating constraints"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Liquid",
+          "label": "Liquid",
+          "readonly": true,
+          "value": "Water"
+        },
+        {
+          "alias": "Temperature, maximum",
+          "label": "Max temperature",
+          "readonly": true,
+          "unit": "°F",
+          "value": "180.0"
+        },
+        {
+          "alias": "Pressure acting on liquid surface",
+          "label": "Surface pressure",
+          "unit": "psia",
+          "value": "14.70"
+        },
+        {
+          "alias": "Vapor pressure of liquid at the rated temperature",
+          "label": "Vapor pressure",
+          "unit": "psia",
+          "value": "7.81"
+        },
+        {
+          "alias": "Static height of liquid surface above datum (impeller eye)",
+          "label": "Static height",
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Total suction line losses (entrance losses and all friction losses)",
+          "label": "Suction line losses",
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "NPSH available at datum (impeller eye)",
+          "label": "NPSH available",
+          "readonly": true,
+          "unit": "ft",
+          "value": "16.31"
+        },
+        {
+          "alias": "Suction pressure, rated",
+          "label": "Suction pressure",
+          "readonly": true,
+          "value": "—"
+        }
+      ],
+      "id": "npsh",
+      "title": "NPSH available calculator"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Driver sizing specification",
+          "label": "Sizing",
+          "options": [
+            "Rated power",
+            "Maximum power",
+            "API 610 / ISO 13709",
+            "ISO 5199"
+          ],
+          "value": "Maximum power"
+        },
+        {
+          "alias": "Margin over specification",
+          "label": "Margin",
+          "unit": "%",
+          "value": "0.00"
+        },
+        {
+          "alias": "Service factor",
+          "label": "Service factor",
+          "options": [
+            "None",
+            "1.15",
+            "1.20",
+            "1.25"
+          ]
+        },
+        {
+          "alias": "Power calculation density strategy",
+          "label": "Power density",
+          "options": [
+            "Max density",
+            "Rated density"
+          ]
+        },
+        {
+          "alias": "Driver design",
+          "label": "Driver design",
+          "options": [
+            "NEMA motor",
+            "IEC motor"
+          ]
+        }
+      ],
+      "id": "driver",
+      "title": "Driver"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Liquid type",
+          "label": "Liquid",
+          "options": [
+            "Water"
+          ]
+        },
+        {
+          "alias": "Additional liquid description",
+          "label": "Description"
+        },
+        {
+          "alias": "Max. desired operating temperature",
+          "label": "Max temperature",
+          "unit": "°F",
+          "value": "68"
+        },
+        {
+          "alias": "Fluid density, rated / max",
+          "label": "Density rated",
+          "unit": "SG",
+          "value": "1.000"
+        },
+        {
+          "alias": "Fluid density, rated / max",
+          "label": "Density max",
+          "unit": "SG",
+          "value": "1.000"
+        },
+        {
+          "alias": "Viscosity, rated",
+          "label": "Viscosity",
+          "unit": "cP",
+          "value": "1.00"
+        },
+        {
+          "alias": "Vapor pressure, rated",
+          "label": "Vapor pressure",
+          "unit": "psia",
+          "value": "0.34"
+        },
+        {
+          "alias": "Viscosity correction specification",
+          "label": "Viscosity correction",
+          "options": [
+            "ANSI/HI 9.6.7-2015",
+            "ANSI/HI 9.6.7-2010",
+            "ANSI/HI 9.6.7-2021",
+            "ANSI/HI 9.6.7-2004",
+            "ANSI/HI 1.1-1.5-1994",
+            "Bagasse Juice",
+            "Chemical Paper Stock",
+            "Mechanical Groundwood Stock",
+            "Karassik",
+            "ANSI/HI 12.1-12.6-2011 (Heterogeneous slurry)"
+          ]
+        },
+        {
+          "alias": "Solids diameter, max",
+          "label": "Max solids diameter",
+          "unit": "in",
+          "value": "0.00"
+        },
+        {
+          "alias": "Solids concentration, by volume",
+          "label": "Solids by volume",
+          "unit": "%",
+          "value": "0.00"
+        },
+        {
+          "alias": "Solids concentration, by weight",
+          "label": "Solids by weight",
+          "unit": "%",
+          "value": "0.00"
+        },
+        {
+          "alias": "Froth factor (1/Cq)",
+          "label": "Froth factor",
+          "value": "1.00"
+        }
+      ],
+      "id": "fluid",
+      "title": "Fluid"
+    },
+    {
+      "columns": [
+        {
+          "alias": "Temperature ( deg F )",
+          "label": "Temperature",
+          "unit": "°F",
+          "values": [
+            "180.0",
+            "180.0",
+            "68.00"
+          ]
+        },
+        {
+          "alias": "Fluid density, rated / max ( SG )",
+          "label": "Density",
+          "readonly": true,
+          "unit": "SG",
+          "values": [
+            "0.975",
+            "0.975",
+            "1.000"
+          ]
+        },
+        {
+          "alias": "Viscosity ( cP )",
+          "label": "Viscosity",
+          "readonly": true,
+          "unit": "cP",
+          "values": [
+            "0.34",
+            "0.34",
+            "0.97"
+          ]
+        },
+        {
+          "alias": "Vapor pressure ( psi.a )",
+          "label": "Vapor pressure",
+          "readonly": true,
+          "unit": "psia",
+          "values": [
+            "7.81",
+            "7.81",
+            "0.34"
+          ]
+        },
+        {
+          "alias": "Enable",
+          "checked": false,
+          "label": "Enable",
+          "only": [
+            2
+          ]
+        }
+      ],
+      "fields": [
+        {
+          "alias": "Filter list",
+          "label": "Filter",
+          "value": "*"
+        },
+        {
+          "alias": "Liquid",
+          "label": "Liquid",
+          "options": [
+            "Water"
+          ]
+        }
+      ],
+      "id": "liquid-properties",
+      "rowLabels": [
+        "Rated",
+        "Maximum",
+        "Minimum"
+      ],
+      "title": "Liquid properties"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Liquid density",
+          "label": "Calculate density",
+          "options": [
+            "Mixture",
+            "Liquid",
+            "Solids"
+          ]
+        },
+        {
+          "alias": "Concentration of solids by weight",
+          "label": "Calculate concentration",
+          "options": [
+            "By weight",
+            "By volume"
+          ]
+        },
+        {
+          "alias": "Liquid density",
+          "label": "Liquid density",
+          "unit": "SG",
+          "value": "1.000"
+        },
+        {
+          "alias": "Solids density",
+          "label": "Solids density",
+          "unit": "SG",
+          "value": "2.654"
+        },
+        {
+          "alias": "Mixture density",
+          "label": "Mixture density",
+          "unit": "SG",
+          "value": "1.248"
+        },
+        {
+          "alias": "Concentration of solids by volume",
+          "label": "Solids by volume",
+          "unit": "%",
+          "value": "15.00"
+        },
+        {
+          "alias": "Concentration of solids by weight",
+          "label": "Solids by weight",
+          "unit": "%",
+          "value": "31.90"
+        },
+        {
+          "alias": "Average particle size (d50)",
+          "label": "Particle size d50",
+          "unit": "micron",
+          "value": "0.00"
+        },
+        {
+          "alias": "Fractional content of solid particles by weight < 75 µm",
+          "label": "Fines under 75 µm",
+          "unit": "%",
+          "value": "0.00"
+        },
+        {
+          "alias": "Pipe internal diameter",
+          "label": "Pipe inner diameter",
+          "unit": "in",
+          "value": "0.00"
+        },
+        {
+          "alias": "Velocity through specified pipe diameter",
+          "label": "Pipe velocity",
+          "readonly": true,
+          "value": "—"
+        },
+        {
+          "alias": "Maximum value of deposit velocity / +10% margin",
+          "label": "Max deposit velocity",
+          "readonly": true,
+          "value": "— / —"
+        }
+      ],
+      "id": "slurry",
+      "title": "Slurry"
+    },
+    {
+      "fields": [
+        {
+          "alias": "NPSH margin",
+          "label": "NPSH margin",
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Maximum downstream system pressure",
+          "label": "Max downstream pressure",
+          "unit": "psig",
+          "value": "0.00"
+        },
+        {
+          "alias": "Minimum head rise to shutoff",
+          "label": "Min head rise to shutoff",
+          "unit": "%",
+          "value": "0.00"
+        },
+        {
+          "alias": "Maximum head rise to shutoff",
+          "label": "Max head rise to shutoff",
+          "unit": "%",
+          "value": "0.00"
+        },
+        {
+          "alias": "Maximum shutoff head",
+          "label": "Max shutoff head",
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Maximum specific speed / suction specific speed",
+          "label": "Max specific speed",
+          "value": "0"
+        },
+        {
+          "alias": "Maximum specific speed / suction specific speed",
+          "label": "Max suction specific speed",
+          "value": "0"
+        },
+        {
+          "alias": "Maximum specific speed / suction specific speed",
+          "label": "Specific speed units",
+          "options": [
+            "Metric: nq (imp. eye flow) / S (imp. eye flow)",
+            "Metric: nq (total flow) / S (imp. eye flow)",
+            "US: Ns (imp. eye flow) / Nss (imp. eye flow)",
+            "US: Ns (total flow) / Nss (imp. eye flow)"
+          ],
+          "value": "US: Ns (imp. eye flow) / Nss (imp. eye flow)"
+        },
+        {
+          "alias": "Minimum head rise to shutoff",
+          "checked": false,
+          "label": "Use discharge orifice where permitted"
+        },
+        {
+          "alias": "Stable head/flow curve required?",
+          "checked": false,
+          "label": "Stable head/flow curve required"
+        }
+      ],
+      "id": "limits",
+      "title": "Pump constraints"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Hydraulic selection specification",
+          "label": "Hydraulic selection",
+          "options": [
+            "None",
+            "API 610 / ISO 13709",
+            "NFPA 20"
+          ]
+        },
+        {
+          "alias": "Construction Specification",
+          "label": "Construction",
+          "options": [
+            "None",
+            "API 610 8th Edition"
+          ]
+        }
+      ],
+      "id": "specs",
+      "title": "Specifications"
+    },
+    {
+      "fields": [
+        {
+          "alias": "5% head increase to be met by",
+          "label": "5% head increase by",
+          "options": [
+            "Larger impeller",
+            "Variable speed",
+            "One blank stage"
+          ]
+        },
+        {
+          "alias": "Maximum continuous speed calculation criteria",
+          "label": "Max continuous speed",
+          "options": [
+            "Synchronous speed (10th/11th Edn. only)",
+            "105% of rated speed"
+          ]
+        },
+        {
+          "alias": "Stable head/flowrate curve criteria",
+          "label": "Stable curve",
+          "options": [
+            "Not required",
+            "Required",
+            "10% rise (parallel operation)"
+          ]
+        },
+        {
+          "alias": "Maximum working pressure calculation criteria",
+          "label": "Max working pressure",
+          "options": [
+            "Rated density",
+            "Maximum density"
+          ]
+        },
+        {
+          "alias": "Maximum working pressure calculation criteria",
+          "label": "Edition",
+          "options": [
+            "10th/11th Edn.",
+            "8th Edn."
+          ]
+        },
+        {
+          "alias": "Maximum working pressure calculation criteria",
+          "checked": false,
+          "label": "Maximum impeller"
+        },
+        {
+          "alias": "Maximum working pressure calculation criteria",
+          "checked": false,
+          "label": "Specify blank stages"
+        },
+        {
+          "alias": "Maximum working pressure calculation criteria",
+          "label": "Blank stages",
+          "showIf": [
+            "Specify blank stages",
+            true
+          ],
+          "value": "0"
+        },
+        {
+          "alias": "Maximum working pressure calculation criteria",
+          "checked": false,
+          "label": "Specify trip speed"
+        },
+        {
+          "alias": "Maximum working pressure calculation criteria",
+          "label": "Trip speed",
+          "showIf": [
+            "Specify trip speed",
+            true
+          ],
+          "unit": "rpm",
+          "value": "0"
+        }
+      ],
+      "id": "api610",
+      "title": "API 610 criteria"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Minimum required material",
+          "label": "Min material",
+          "options": [
+            "All",
+            "Cast iron",
+            "Carbon steel",
+            "Stainless steel",
+            "Exotic alloy",
+            "Non-metallic"
+          ]
+        },
+        {
+          "alias": "Multistage search for efficiency optimized results?",
+          "checked": false,
+          "label": "Multistage efficiency search"
+        }
+      ],
+      "id": "general",
+      "title": "General constraints"
+    },
+    {
+      "buttons": [
+        {
+          "alias": "Select all",
+          "label": "Select all"
+        },
+        {
+          "alias": "Filter",
+          "label": "Filter"
+        },
+        {
+          "alias": "List Models",
+          "label": "List models"
+        }
+      ],
+      "fields": [
+        {
+          "alias": "End-suction, foot mounted",
+          "check": false,
+          "label": "End-suction, foot mounted"
+        },
+        {
+          "alias": "SCI Pumps",
+          "check": false,
+          "label": "SCI Pumps"
+        },
+        {
+          "alias": "Radially split multistage",
+          "check": false,
+          "label": "Radially split multistage"
+        },
+        {
+          "alias": "Submersibles",
+          "check": false,
+          "label": "Submersibles"
+        },
+        {
+          "alias": "Axial flow",
+          "check": false,
+          "label": "Axial flow"
+        },
+        {
+          "alias": "Demonstration product",
+          "check": false,
+          "label": "Demonstration product"
+        },
+        {
+          "alias": "End-suction, foot mounted (basic)",
+          "check": false,
+          "label": "End-suction, foot mounted (basic)"
+        },
+        {
+          "alias": "End-suction, foot mounted (advanced)",
+          "check": false,
+          "label": "End-suction, foot mounted (advanced)"
+        },
+        {
+          "alias": "End-suction, foot mounted (fixed motor)",
+          "check": false,
+          "label": "End-suction, foot mounted (fixed motor)"
+        },
+        {
+          "alias": "End-suction, foot mounted (loaded motor speed)",
+          "check": false,
+          "label": "End-suction, foot mounted (loaded motor speed)"
+        },
+        {
+          "alias": "Positive Displacement (Franklin Test)",
+          "check": false,
+          "label": "Positive Displacement (Franklin Test)"
+        },
+        {
+          "alias": "Interstage takeoff",
+          "check": false,
+          "label": "Interstage takeoff"
+        }
+      ],
+      "id": "product-lines",
+      "title": "Product lines"
+    },
+    {
+      "buttons": [
+        {
+          "alias": "Recalculate",
+          "label": "Recalculate"
+        }
+      ],
+      "columns": [
+        {
+          "alias": "Label",
+          "label": "Label"
+        },
+        {
+          "alias": "Static head (ft)",
+          "label": "Static head",
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Flow (USgpm)",
+          "label": "Flow",
+          "unit": "USgpm",
+          "value": "100.0"
+        },
+        {
+          "alias": "Head (ft)",
+          "label": "Head",
+          "unit": "ft",
+          "value": "100.0"
+        },
+        {
+          "alias": "Display",
+          "checked": true,
+          "label": "Display"
+        }
+      ],
+      "fields": [
+        {
+          "alias": "Flow (USgpm)",
+          "checked": false,
+          "label": "Set flow"
+        },
+        {
+          "alias": "Head (ft)",
+          "checked": false,
+          "label": "Set head"
+        }
+      ],
+      "id": "system-curves",
+      "rowLabels": [
+        "Curve 1",
+        "Curve 2",
+        "Curve 3",
+        "Curve 4"
+      ],
+      "title": "System curves"
+    },
+    {
+      "columns": [
+        {
+          "alias": "Enable",
+          "checked": true,
+          "label": "Enable"
+        },
+        {
+          "alias": "Flow:",
+          "label": "Flow",
+          "values": [
+            "100.0"
+          ]
+        },
+        {
+          "alias": "Operation:",
+          "label": "Operation",
+          "value": "8760"
+        },
+        {
+          "alias": "Energy cost, present value ($ per kWh)",
+          "label": "Energy cost",
+          "unit": "$/kWh",
+          "value": "0.1"
+        },
+        {
+          "alias": "System curve",
+          "label": "System curve",
+          "options": [
+            "—",
+            "Curve 1",
+            "Curve 2",
+            "Curve 3",
+            "Curve 4"
+          ]
+        }
+      ],
+      "fields": [
+        {
+          "alias": "Expected pump life:",
+          "label": "Expected pump life",
+          "unit": "years",
+          "value": "20"
+        },
+        {
+          "alias": "Flow:",
+          "label": "Flow in",
+          "options": [
+            "USgpm",
+            "% of rated flow"
+          ]
+        },
+        {
+          "alias": "Operation:",
+          "label": "Operation in",
+          "options": [
+            "Hours per year",
+            "% of year"
+          ]
+        },
+        {
+          "alias": "Speed, rated (rpm)",
+          "label": "Rated speed",
+          "options": [
+            "Synchronous",
+            "Variable"
+          ]
+        },
+        {
+          "alias": "Total",
+          "label": "Total operation",
+          "readonly": true,
+          "unit": "h",
+          "value": "43,800"
+        }
+      ],
+      "id": "load-profiles",
+      "rowLabels": [
+        "Profile 1",
+        "Profile 2",
+        "Profile 3",
+        "Profile 4",
+        "Profile 5"
+      ],
+      "title": "Load profiles"
+    },
+    {
+      "columns": [
+        {
+          "alias": "Enable",
+          "checked": false,
+          "label": "Enable",
+          "only": [
+            0,
+            1
+          ]
+        },
+        {
+          "alias": "Flow, rated (USgpm)",
+          "label": "Flow",
+          "readonlyRows": [
+            2
+          ],
+          "unit": "USgpm",
+          "values": [
+            "",
+            "",
+            "100.0"
+          ]
+        },
+        {
+          "alias": "Differential head / pressure, rated (ft)",
+          "label": "Head",
+          "readonlyRows": [
+            2
+          ],
+          "unit": "ft",
+          "values": [
+            "",
+            "",
+            "100.0"
+          ]
+        }
+      ],
+      "fields": [
+        {
+          "alias": "ITO type",
+          "label": "ITO type",
+          "readonly": true,
+          "value": "Not captured yet"
+        },
+        {
+          "alias": "Differential head / pressure, rated (ft)",
+          "label": "Head tolerance +",
+          "unit": "%",
+          "value": "0.00"
+        },
+        {
+          "alias": "Differential head / pressure, rated (ft)",
+          "label": "Head tolerance −",
+          "unit": "%",
+          "value": "0.00"
+        }
+      ],
+      "id": "ito",
+      "rowLabels": [
+        "Take-off 1",
+        "Take-off 2",
+        "Final discharge"
+      ],
+      "title": "Interstage take-off"
+    },
+    {
+      "fields": [
+        {
+          "alias": "System #1 | System #2 | System #3 | System #4",
+          "label": "System",
+          "options": [
+            "System 1",
+            "System 2",
+            "System 3",
+            "System 4"
+          ]
+        },
+        {
+          "alias": "Friction calculation strategy",
+          "label": "Friction method",
+          "options": [
+            "Darcy-Weisbach (Colebrook)",
+            "Hazen-Williams"
+          ]
+        },
+        {
+          "alias": "System type",
+          "label": "System type",
+          "options": [
+            "Line",
+            "Submersible",
+            "Dry well (flooded)",
+            "Dry well (lift)"
+          ]
+        },
+        {
+          "alias": "Nominal pipe size units",
+          "label": "Pipe size units",
+          "options": [
+            "Metric",
+            "US"
+          ]
+        },
+        {
+          "alias": "System curve label / display",
+          "label": "Curve label"
+        },
+        {
+          "alias": "System curve label / display",
+          "checked": false,
+          "label": "Show curve"
+        },
+        {
+          "alias": "Flow, rated",
+          "label": "Flow",
+          "unit": "USgpm",
+          "value": "100"
+        }
+      ],
+      "id": "hl-conditions",
+      "title": "Head loss system"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Liquid type",
+          "label": "Liquid",
+          "options": [
+            "Water"
+          ]
+        },
+        {
+          "alias": "Additional Liquid Description",
+          "label": "Description"
+        },
+        {
+          "alias": "Solids diameter, max",
+          "label": "Max solids diameter",
+          "unit": "in",
+          "value": "0.00"
+        },
+        {
+          "alias": "Max. desired operating temperature",
+          "label": "Max temperature",
+          "unit": "°F",
+          "value": "68"
+        },
+        {
+          "alias": "Fluid density, rated / max",
+          "label": "Density rated",
+          "unit": "SG",
+          "value": "1.000"
+        },
+        {
+          "alias": "Fluid density, rated / max",
+          "label": "Density max",
+          "unit": "SG",
+          "value": "1.000"
+        },
+        {
+          "alias": "Viscosity, rated",
+          "label": "Viscosity",
+          "unit": "cP",
+          "value": "1.00"
+        },
+        {
+          "alias": "Vapor pressure",
+          "label": "Vapor pressure",
+          "unit": "psia",
+          "value": "0.34"
+        }
+      ],
+      "id": "hl-liquid",
+      "title": "Head loss fluid"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Hs",
+          "label": "Suction height",
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Hd",
+          "label": "Discharge height",
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Hp",
+          "label": "Pump height",
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Ps",
+          "label": "Suction pressure",
+          "unit": "psig",
+          "value": "0.00"
+        },
+        {
+          "alias": "Pd",
+          "label": "Discharge pressure",
+          "unit": "psig",
+          "value": "0.00"
+        },
+        {
+          "alias": "Head loss",
+          "label": "Head loss",
+          "readonly": true,
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Static head",
+          "label": "Static head",
+          "readonly": true,
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Total head",
+          "label": "Total head",
+          "readonly": true,
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "NPSHa",
+          "label": "NPSHa",
+          "readonly": true,
+          "unit": "ft",
+          "value": "33.17"
+        }
+      ],
+      "id": "hl-diagram",
+      "title": "Elevations and pressures"
+    },
+    {
+      "add": "Add fitting",
+      "columns": [
+        {
+          "alias": "Fitting Type",
+          "label": "Fitting",
+          "options": [
+            "Pipe",
+            "Isolating Valve",
+            "Non-Return Valve",
+            "Elbow",
+            "Transition",
+            "User Defined",
+            "Sundry Losses",
+            "Pipe Exit Behavior",
+            "Pipe Entrance Behavior",
+            "Strainer"
+          ]
+        },
+        {
+          "alias": "Options / Description",
+          "label": "Material",
+          "options": [
+            "Steel SCH40",
+            "Steel SCH 80",
+            "Steel SCH 160",
+            "PVS SCH 40",
+            "PVC SCH80",
+            "PVC PN6",
+            "PVC PN9",
+            "PVC PN12",
+            "PVC PN15",
+            "PVC PN18",
+            "HDPE PN4",
+            "HDPE PN5",
+            "HDPE PN6",
+            "HDPE PN8",
+            "HDPE PN10",
+            "HDPE PN12.5",
+            "HDPE PN16",
+            "HDPE PN20",
+            "HDPE PN25",
+            "Copper Class X",
+            "Copper Class Y",
+            "Copper Class Z",
+            "Cast Iron K9",
+            "Cast Iron K10"
+          ],
+          "value": "Steel SCH40"
+        },
+        {
+          "alias": "Qty",
+          "label": "Qty",
+          "readonly": true,
+          "value": "—"
+        },
+        {
+          "alias": "Nominal Size",
+          "label": "Size",
+          "options": [
+            "DN15",
+            "DN20",
+            "DN25",
+            "DN40",
+            "DN50",
+            "DN80",
+            "DN100",
+            "DN125",
+            "DN150",
+            "DN200",
+            "DN250",
+            "DN300",
+            "DN350",
+            "DN400",
+            "DN450",
+            "DN500",
+            "DN600",
+            "DN900"
+          ],
+          "value": "DN100"
+        },
+        {
+          "alias": "Inner Dia. [d1] (in)",
+          "label": "d1",
+          "readonly": true,
+          "unit": "in",
+          "value": "4.03"
+        },
+        {
+          "alias": "Inner Dia. [d2] (in)",
+          "label": "d2",
+          "readonly": true,
+          "unit": "in",
+          "value": "—"
+        },
+        {
+          "alias": "Radius of Bend (in)",
+          "label": "Bend radius",
+          "readonly": true,
+          "unit": "in",
+          "value": "—"
+        },
+        {
+          "alias": "Degree",
+          "label": "Degree",
+          "readonly": true,
+          "value": "—"
+        },
+        {
+          "alias": "Pipe Length (or Equiv.) (ft)",
+          "label": "Length",
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Roughness (in)",
+          "label": "Roughness",
+          "unit": "in",
+          "value": "0.00"
+        },
+        {
+          "alias": "Velocity (ft/s)",
+          "label": "Velocity",
+          "readonly": true,
+          "unit": "ft/s",
+          "value": "2.52"
+        },
+        {
+          "alias": "Re",
+          "label": "Re",
+          "readonly": true,
+          "value": "78,389.27"
+        },
+        {
+          "alias": "C Factor",
+          "label": "C",
+          "readonly": true,
+          "value": "—"
+        },
+        {
+          "alias": "Loss Coeff. [K, Zeta]",
+          "label": "K",
+          "readonly": true,
+          "value": "—"
+        },
+        {
+          "alias": "Flow Coeff. [Cv, Kv] (USgpm/psi.g^0.5)",
+          "label": "Cv",
+          "readonly": true,
+          "value": "—"
+        },
+        {
+          "alias": "% of Flow",
+          "label": "Flow share",
+          "unit": "%",
+          "value": "100"
+        },
+        {
+          "alias": "Head loss (ft)",
+          "label": "Head loss",
+          "readonly": true,
+          "unit": "ft",
+          "value": "0.00"
+        }
+      ],
+      "editable": {
+        "Elbow": [
+          "Material",
+          "Qty",
+          "Size",
+          "Bend radius",
+          "Degree",
+          "Flow share"
+        ],
+        "Isolating Valve": [
+          "Qty",
+          "Size",
+          "K",
+          "Cv",
+          "Flow share"
+        ],
+        "Non-Return Valve": [
+          "Qty",
+          "Size",
+          "K",
+          "Cv",
+          "Flow share"
+        ],
+        "Pipe": [
+          "Material",
+          "Size",
+          "Length",
+          "Roughness",
+          "Flow share"
+        ],
+        "Pipe Entrance Behavior": [
+          "Size",
+          "K",
+          "Flow share"
+        ],
+        "Pipe Exit Behavior": [
+          "Size",
+          "K",
+          "Flow share"
+        ],
+        "Strainer": [
+          "Qty",
+          "Size",
+          "K",
+          "Cv",
+          "Flow share"
+        ],
+        "Sundry Losses": [
+          "Qty",
+          "K",
+          "Flow share"
+        ],
+        "Transition": [
+          "Size",
+          "d1",
+          "d2",
+          "Degree",
+          "Flow share"
+        ],
+        "User Defined": [
+          "Qty",
+          "Size",
+          "K",
+          "Cv",
+          "Flow share"
+        ]
+      },
+      "editableBy": "Fitting",
+      "fields": [
+        {
+          "alias": "Default nominal size:",
+          "checked": false,
+          "label": "Set default size"
+        },
+        {
+          "alias": "Default nominal size:",
+          "label": "Default size",
+          "options": [
+            "DN15",
+            "DN20",
+            "DN25",
+            "DN32",
+            "DN40",
+            "DN50",
+            "DN65",
+            "DN80",
+            "DN100",
+            "DN125",
+            "DN150",
+            "DN200",
+            "DN250",
+            "DN300",
+            "DN350",
+            "DN400",
+            "DN500",
+            "DN600",
+            "DN800",
+            "DN1000",
+            "DN1200",
+            "DN1400",
+            "DN2000",
+            "DN2500",
+            "DN3000",
+            "DN4000"
+          ],
+          "value": "DN100"
+        },
+        {
+          "alias": "Default nominal size:",
+          "label": "Recommended diameter",
+          "readonly": true,
+          "unit": "in",
+          "value": "3.94"
+        },
+        {
+          "alias": "Default nominal size:",
+          "label": "Flow velocity",
+          "readonly": true,
+          "unit": "ft/s",
+          "value": "2.64"
+        },
+        {
+          "alias": "Total suction",
+          "label": "Total suction",
+          "readonly": true,
+          "unit": "ft",
+          "value": "0.00"
+        }
+      ],
+      "id": "hl-suction",
+      "note": "Which columns each fitting type unlocks is a best guess. Only Pipe rows were captured.",
+      "rows": 3,
+      "title": "Suction piping"
+    },
+    {
+      "add": "Add fitting",
+      "columns": [
+        {
+          "alias": "Fitting Type",
+          "label": "Fitting",
+          "options": [
+            "Pipe",
+            "Isolating Valve",
+            "Non-Return Valve",
+            "Elbow",
+            "Transition",
+            "User Defined",
+            "Sundry Losses",
+            "Pipe Exit Behavior",
+            "Pipe Entrance Behavior",
+            "Strainer"
+          ]
+        },
+        {
+          "alias": "Options / Description",
+          "label": "Material",
+          "options": [
+            "Steel SCH40",
+            "Steel SCH 80",
+            "Steel SCH 160",
+            "PVS SCH 40",
+            "PVC SCH80",
+            "PVC PN6",
+            "PVC PN9",
+            "PVC PN12",
+            "PVC PN15",
+            "PVC PN18",
+            "HDPE PN4",
+            "HDPE PN5",
+            "HDPE PN6",
+            "HDPE PN8",
+            "HDPE PN10",
+            "HDPE PN12.5",
+            "HDPE PN16",
+            "HDPE PN20",
+            "HDPE PN25",
+            "Copper Class X",
+            "Copper Class Y",
+            "Copper Class Z",
+            "Cast Iron K9",
+            "Cast Iron K10"
+          ],
+          "value": "Steel SCH40"
+        },
+        {
+          "alias": "Qty",
+          "label": "Qty",
+          "readonly": true,
+          "value": "—"
+        },
+        {
+          "alias": "Nominal Size",
+          "label": "Size",
+          "options": [
+            "DN15",
+            "DN20",
+            "DN25",
+            "DN40",
+            "DN50",
+            "DN80",
+            "DN100",
+            "DN125",
+            "DN150",
+            "DN200",
+            "DN250",
+            "DN300",
+            "DN350",
+            "DN400",
+            "DN450",
+            "DN500",
+            "DN600",
+            "DN900"
+          ],
+          "value": "DN80"
+        },
+        {
+          "alias": "Inner Dia. [d1] (in)",
+          "label": "d1",
+          "readonly": true,
+          "unit": "in",
+          "value": "3.07"
+        },
+        {
+          "alias": "Inner Dia. [d2] (in)",
+          "label": "d2",
+          "readonly": true,
+          "unit": "in",
+          "value": "—"
+        },
+        {
+          "alias": "Radius of Bend (in)",
+          "label": "Bend radius",
+          "readonly": true,
+          "unit": "in",
+          "value": "—"
+        },
+        {
+          "alias": "Degree",
+          "label": "Degree",
+          "readonly": true,
+          "value": "—"
+        },
+        {
+          "alias": "Pipe Length (or Equiv.) (ft)",
+          "label": "Length",
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Roughness (in)",
+          "label": "Roughness",
+          "unit": "in",
+          "value": "0.00"
+        },
+        {
+          "alias": "Velocity (ft/s)",
+          "label": "Velocity",
+          "readonly": true,
+          "unit": "ft/s",
+          "value": "4.34"
+        },
+        {
+          "alias": "Re",
+          "label": "Re",
+          "readonly": true,
+          "value": "102,942.52"
+        },
+        {
+          "alias": "C Factor",
+          "label": "C",
+          "readonly": true,
+          "value": "—"
+        },
+        {
+          "alias": "Loss Coeff. [K, Zeta]",
+          "label": "K",
+          "readonly": true,
+          "value": "—"
+        },
+        {
+          "alias": "Flow Coeff. [Cv, Kv] (USgpm/psi.g^0.5)",
+          "label": "Cv",
+          "readonly": true,
+          "value": "—"
+        },
+        {
+          "alias": "% of Flow",
+          "label": "Flow share",
+          "unit": "%",
+          "value": "100"
+        },
+        {
+          "alias": "Head loss (ft)",
+          "label": "Head loss",
+          "readonly": true,
+          "unit": "ft",
+          "value": "0.00"
+        }
+      ],
+      "editable": {
+        "Elbow": [
+          "Material",
+          "Qty",
+          "Size",
+          "Bend radius",
+          "Degree",
+          "Flow share"
+        ],
+        "Isolating Valve": [
+          "Qty",
+          "Size",
+          "K",
+          "Cv",
+          "Flow share"
+        ],
+        "Non-Return Valve": [
+          "Qty",
+          "Size",
+          "K",
+          "Cv",
+          "Flow share"
+        ],
+        "Pipe": [
+          "Material",
+          "Size",
+          "Length",
+          "Roughness",
+          "Flow share"
+        ],
+        "Pipe Entrance Behavior": [
+          "Size",
+          "K",
+          "Flow share"
+        ],
+        "Pipe Exit Behavior": [
+          "Size",
+          "K",
+          "Flow share"
+        ],
+        "Strainer": [
+          "Qty",
+          "Size",
+          "K",
+          "Cv",
+          "Flow share"
+        ],
+        "Sundry Losses": [
+          "Qty",
+          "K",
+          "Flow share"
+        ],
+        "Transition": [
+          "Size",
+          "d1",
+          "d2",
+          "Degree",
+          "Flow share"
+        ],
+        "User Defined": [
+          "Qty",
+          "Size",
+          "K",
+          "Cv",
+          "Flow share"
+        ]
+      },
+      "editableBy": "Fitting",
+      "fields": [
+        {
+          "alias": "Default nominal size:",
+          "checked": false,
+          "label": "Set default size"
+        },
+        {
+          "alias": "Default nominal size:",
+          "label": "Default size",
+          "options": [
+            "DN15",
+            "DN20",
+            "DN25",
+            "DN32",
+            "DN40",
+            "DN50",
+            "DN65",
+            "DN80",
+            "DN100",
+            "DN125",
+            "DN150",
+            "DN200",
+            "DN250",
+            "DN300",
+            "DN350",
+            "DN400",
+            "DN500",
+            "DN600",
+            "DN800",
+            "DN1000",
+            "DN1200",
+            "DN1400",
+            "DN2000",
+            "DN2500",
+            "DN3000",
+            "DN4000"
+          ],
+          "value": "DN80"
+        },
+        {
+          "alias": "Default nominal size:",
+          "label": "Recommended diameter",
+          "readonly": true,
+          "unit": "in",
+          "value": "3.15"
+        },
+        {
+          "alias": "Default nominal size:",
+          "label": "Flow velocity",
+          "readonly": true,
+          "unit": "ft/s",
+          "value": "4.12"
+        },
+        {
+          "alias": "Total discharge",
+          "label": "Total discharge",
+          "readonly": true,
+          "unit": "ft",
+          "value": "0.00"
+        },
+        {
+          "alias": "Total head loss",
+          "label": "Total head loss",
+          "readonly": true,
+          "unit": "ft",
+          "value": "0.00"
+        }
+      ],
+      "id": "hl-discharge",
+      "note": "Which columns each fitting type unlocks is a best guess. Only Pipe rows were captured.",
+      "rows": 1,
+      "title": "Discharge piping"
+    },
+    {
+      "columns": [
+        {
+          "alias": "Primary condition",
+          "label": "Primary",
+          "radio": true
+        },
+        {
+          "alias": "Description",
+          "label": "Description"
+        },
+        {
+          "alias": "Flow, rated",
+          "label": "Flow",
+          "readonlyRows": [
+            0
+          ],
+          "unit": "USgpm",
+          "values": [
+            "100.0"
+          ]
+        },
+        {
+          "alias": "Head, rated (requested)",
+          "label": "Head",
+          "readonlyRows": [
+            0
+          ],
+          "unit": "ft",
+          "values": [
+            "100.0"
+          ]
+        },
+        {
+          "alias": "Temperature, max",
+          "label": "Max temperature",
+          "readonlyRows": [
+            0
+          ],
+          "unit": "°F",
+          "values": [
+            "68.00"
+          ]
+        },
+        {
+          "alias": "Fluid density, rated / max",
+          "label": "Density rated",
+          "readonlyRows": [
+            0
+          ],
+          "unit": "SG",
+          "values": [
+            "1.000"
+          ]
+        },
+        {
+          "alias": "Fluid density, rated / max",
+          "label": "Density max",
+          "readonlyRows": [
+            0
+          ],
+          "unit": "SG",
+          "values": [
+            "1.000"
+          ]
+        },
+        {
+          "alias": "Viscosity, rated",
+          "label": "Viscosity",
+          "readonlyRows": [
+            0
+          ],
+          "unit": "cP",
+          "values": [
+            "1.00"
+          ]
+        }
+      ],
+      "id": "conditions",
+      "rowLabels": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "title": "Conditions"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Quantity of pumps",
+          "label": "Pumps",
+          "options": [
+            "Simplex (1)",
+            "Duplex (2): 50% pump, 0 standby",
+            "Triplex (3)"
+          ],
+          "value": "Duplex (2): 50% pump, 0 standby"
+        },
+        {
+          "alias": "System suction type",
+          "label": "Suction type",
+          "options": [
+            "Boost",
+            "Flooded",
+            "Lift"
+          ]
+        },
+        {
+          "alias": "System flow",
+          "label": "System flow",
+          "unit": "USgpm"
+        },
+        {
+          "alias": "System discharge pressure",
+          "label": "Discharge pressure",
+          "unit": "psig"
+        },
+        {
+          "alias": "Suction pressure, rated / max",
+          "label": "Suction pressure rated",
+          "unit": "psig",
+          "value": "0.00"
+        },
+        {
+          "alias": "Suction pressure, rated / max",
+          "label": "Suction pressure max",
+          "unit": "psig",
+          "value": "0.00"
+        },
+        {
+          "alias": "Apply load profile",
+          "label": "Load profile",
+          "options": [
+            "Booster System (Europump)"
+          ]
+        },
+        {
+          "alias": "System losses",
+          "label": "System losses",
+          "readonly": true,
+          "unit": "psi",
+          "value": "5.00"
+        },
+        {
+          "alias": "Flowrate per pump",
+          "label": "Flow per pump",
+          "readonly": true,
+          "unit": "USgpm",
+          "value": "0.00"
+        },
+        {
+          "alias": "Differential pressure per pump",
+          "label": "Pressure per pump",
+          "readonly": true,
+          "unit": "psi",
+          "value": "5.00"
+        }
+      ],
+      "id": "multipump",
+      "title": "Multi-pump system"
+    },
+    {
+      "columns": [
+        {
+          "alias": "",
+          "checked": true,
+          "label": "Enable"
+        },
+        {
+          "alias": "Flow",
+          "label": "Flow",
+          "values": [
+            "95.0",
+            "75.0",
+            "55.0",
+            "35.0",
+            "15.0"
+          ]
+        },
+        {
+          "alias": "Operating time",
+          "label": "Operating time",
+          "values": [
+            "3.0",
+            "7.0",
+            "18.0",
+            "45.0",
+            "27.0"
+          ]
+        },
+        {
+          "alias": "Energy cost, present value ($)",
+          "label": "Energy cost",
+          "unit": "$",
+          "value": "0.1"
+        }
+      ],
+      "fields": [
+        {
+          "alias": "Load Profile",
+          "label": "Load profile",
+          "options": [
+            "Booster System (Europump)"
+          ]
+        },
+        {
+          "alias": "Operating time (Hours)",
+          "label": "Operating time",
+          "unit": "h",
+          "value": "8760.0"
+        },
+        {
+          "alias": "Flow",
+          "label": "Flow in",
+          "options": [
+            "%",
+            "USgpm"
+          ]
+        },
+        {
+          "alias": "Operating time",
+          "label": "Time in",
+          "options": [
+            "%",
+            "Hours"
+          ]
+        },
+        {
+          "alias": "Current search criteria:",
+          "label": "Search criteria",
+          "readonly": true,
+          "value": "All suitable speeds"
+        },
+        {
+          "alias": "Control curve type",
+          "label": "Control curve",
+          "options": [
+            "Linear"
+          ]
+        },
+        {
+          "alias": "Static head (percentage of rated head) (%)",
+          "label": "Static head",
+          "unit": "%",
+          "value": "50.0"
+        }
+      ],
+      "id": "twe",
+      "rowLabels": [
+        "Point 1",
+        "Point 2",
+        "Point 3",
+        "Point 4",
+        "Point 5"
+      ],
+      "title": "True weighted efficiency"
+    },
+    {
+      "fields": [
+        {
+          "alias": "Flow adjustment factor",
+          "label": "Flow"
+        },
+        {
+          "alias": "Flow adjustment factor efficiency only",
+          "label": "Flow, efficiency only"
+        },
+        {
+          "alias": "Flow adjustment factor end of curve only",
+          "label": "Flow, end of curve only"
+        },
+        {
+          "alias": "Head adjustment factor at all flows",
+          "label": "Head, all flows"
+        },
+        {
+          "alias": "Head adjustment factor at rated flow",
+          "label": "Head, rated flow"
+        },
+        {
+          "alias": "Efficiency adjustment factor",
+          "label": "Efficiency"
+        },
+        {
+          "alias": "NPSH required adjustment factor",
+          "label": "NPSH required"
+        },
+        {
+          "alias": "MCSF adjustment factor",
+          "label": "MCSF"
+        },
+        {
+          "alias": "Power loss",
+          "label": "Power loss"
+        },
+        {
+          "alias": "Torque loss",
+          "label": "Torque loss"
+        },
+        {
+          "alias": "Performance adjustment comments",
+          "label": "Comments"
+        }
+      ],
+      "id": "adjustments",
+      "title": "Performance adjustments"
+    },
+    {
+      "buttons": [
+        {
+          "alias": "Save",
+          "label": "Save"
+        },
+        {
+          "alias": "Log Files",
+          "label": "Log Files"
+        },
+        {
+          "alias": "Overrides",
+          "label": "Overrides"
+        },
+        {
+          "alias": "Search Results",
+          "label": "Search Results"
+        },
+        {
+          "alias": "Performance Curve",
+          "label": "Performance Curve"
+        },
+        {
+          "alias": "General Arrangement",
+          "label": "General Arrangement"
+        }
+      ],
+      "fields": [
+        {
+          "alias": "Units",
+          "label": "Units",
+          "options": [
+            "US",
+            "Metric"
+          ]
+        }
+      ],
+      "id": "shell",
+      "title": "App shell"
+    },
+    {
+      "buttons": [
+        {
+          "alias": "Selector navigation",
+          "label": "Selector navigation"
+        }
+      ],
+      "columns": [
+        {
+          "alias": "IC factors",
+          "label": "IC factors",
+          "readonly": true
+        },
+        {
+          "alias": "Inter-company multiplier",
+          "label": "IC multiplier",
+          "readonly": true
+        },
+        {
+          "alias": "Inter-company sell price",
+          "label": "IC sell price",
+          "readonly": true
+        }
+      ],
+      "fields": [
+        {
+          "alias": "Language selector",
+          "label": "Language",
+          "options": [
+            "English"
+          ]
+        },
+        {
+          "alias": "Show near misses",
+          "checked": false,
+          "label": "Show near misses"
+        }
+      ],
+      "id": "customer",
+      "rows": 1,
+      "title": "Customer-specific"
+    },
+    {
+      "id": "deprecated",
+      "note": "Not ported. Listed so the inventory stays 1:1.",
+      "title": "Deprecated"
+    }
+  ],
+  "colors": {
+    "review": "#cffafe"
+  },
+  "flows": [
+    {
+      "edges": [
+        {
+          "id": "project-item",
+          "source": "project",
+          "target": "item"
+        },
+        {
+          "id": "item-duty",
+          "source": "item",
+          "target": "duty"
+        },
+        {
+          "id": "duty-quick",
+          "source": "duty",
+          "target": "quick"
+        },
+        {
+          "id": "quick-multipump",
+          "label": "Yes",
+          "source": "quick",
+          "target": "multipump",
+          "type": "smoothstep"
+        },
+        {
+          "id": "quick-product-lines",
+          "label": "No",
+          "source": "quick",
+          "target": "product-lines",
+          "type": "smoothstep"
+        },
+        {
+          "id": "multipump-twe",
+          "source": "multipump",
+          "target": "twe"
+        },
+        {
+          "id": "product-lines-d-options",
+          "source": "product-lines",
+          "target": "d-options"
+        },
+        {
+          "id": "d-options-options",
+          "label": "Yes",
+          "source": "d-options",
+          "target": "options",
+          "type": "smoothstep"
+        },
+        {
+          "id": "d-options-constraints",
+          "label": "No",
+          "source": "d-options",
+          "target": "constraints",
+          "type": "smoothstep"
+        },
+        {
+          "id": "options-constraints",
+          "source": "options",
+          "target": "constraints"
+        },
+        {
+          "id": "constraints-d-npsh",
+          "source": "constraints",
+          "target": "d-npsh"
+        },
+        {
+          "id": "d-npsh-npsh",
+          "label": "Yes",
+          "source": "d-npsh",
+          "target": "npsh",
+          "type": "smoothstep"
+        },
+        {
+          "id": "d-npsh-driver",
+          "label": "No",
+          "source": "d-npsh",
+          "target": "driver",
+          "type": "smoothstep"
+        },
+        {
+          "id": "npsh-driver",
+          "source": "npsh",
+          "target": "driver"
+        },
+        {
+          "id": "driver-fluid",
+          "source": "driver",
+          "target": "fluid"
+        },
+        {
+          "id": "fluid-d-liquid",
+          "source": "fluid",
+          "target": "d-liquid"
+        },
+        {
+          "id": "d-liquid-liquid-properties",
+          "label": "Yes",
+          "source": "d-liquid",
+          "target": "liquid-properties",
+          "type": "smoothstep"
+        },
+        {
+          "id": "d-liquid-d-slurry",
+          "label": "No",
+          "source": "d-liquid",
+          "target": "d-slurry",
+          "type": "smoothstep"
+        },
+        {
+          "id": "liquid-properties-d-slurry",
+          "source": "liquid-properties",
+          "target": "d-slurry"
+        },
+        {
+          "id": "d-slurry-slurry",
+          "label": "Yes",
+          "source": "d-slurry",
+          "target": "slurry",
+          "type": "smoothstep"
+        },
+        {
+          "id": "d-slurry-limits",
+          "label": "No",
+          "source": "d-slurry",
+          "target": "limits",
+          "type": "smoothstep"
+        },
+        {
+          "id": "slurry-limits",
+          "source": "slurry",
+          "target": "limits"
+        },
+        {
+          "id": "limits-specs",
+          "source": "limits",
+          "target": "specs"
+        },
+        {
+          "id": "specs-d-api",
+          "source": "specs",
+          "target": "d-api"
+        },
+        {
+          "id": "d-api-api610",
+          "label": "Yes",
+          "source": "d-api",
+          "target": "api610",
+          "type": "smoothstep"
+        },
+        {
+          "id": "d-api-general",
+          "label": "No",
+          "source": "d-api",
+          "target": "general",
+          "type": "smoothstep"
+        },
+        {
+          "id": "api610-general",
+          "source": "api610",
+          "target": "general"
+        },
+        {
+          "id": "general-d-system",
+          "source": "general",
+          "target": "d-system"
+        },
+        {
+          "id": "d-system-system-curves",
+          "label": "Yes",
+          "source": "d-system",
+          "target": "system-curves",
+          "type": "smoothstep"
+        },
+        {
+          "id": "d-system-d-ito",
+          "label": "No",
+          "source": "d-system",
+          "target": "d-ito",
+          "type": "smoothstep"
+        },
+        {
+          "id": "system-curves-load-profiles",
+          "source": "system-curves",
+          "target": "load-profiles"
+        },
+        {
+          "id": "load-profiles-d-ito",
+          "source": "load-profiles",
+          "target": "d-ito"
+        },
+        {
+          "id": "d-ito-ito",
+          "label": "Yes",
+          "source": "d-ito",
+          "target": "ito",
+          "type": "smoothstep"
+        },
+        {
+          "id": "d-ito-d-headloss",
+          "label": "No",
+          "source": "d-ito",
+          "target": "d-headloss",
+          "type": "smoothstep"
+        },
+        {
+          "id": "ito-d-headloss",
+          "source": "ito",
+          "target": "d-headloss"
+        },
+        {
+          "id": "d-headloss-hl-conditions",
+          "label": "Yes",
+          "source": "d-headloss",
+          "target": "hl-conditions",
+          "type": "smoothstep"
+        },
+        {
+          "id": "d-headloss-d-conditions",
+          "label": "No",
+          "source": "d-headloss",
+          "target": "d-conditions",
+          "type": "smoothstep"
+        },
+        {
+          "id": "hl-conditions-hl-liquid",
+          "source": "hl-conditions",
+          "target": "hl-liquid"
+        },
+        {
+          "id": "hl-liquid-hl-diagram",
+          "source": "hl-liquid",
+          "target": "hl-diagram"
+        },
+        {
+          "id": "hl-diagram-hl-suction",
+          "source": "hl-diagram",
+          "target": "hl-suction"
+        },
+        {
+          "id": "hl-suction-hl-discharge",
+          "source": "hl-suction",
+          "target": "hl-discharge"
+        },
+        {
+          "id": "hl-discharge-d-conditions",
+          "source": "hl-discharge",
+          "target": "d-conditions"
+        },
+        {
+          "id": "d-conditions-conditions",
+          "label": "Yes",
+          "source": "d-conditions",
+          "target": "conditions",
+          "type": "smoothstep"
+        },
+        {
+          "id": "d-conditions-search",
+          "label": "No",
+          "source": "d-conditions",
+          "target": "search",
+          "type": "smoothstep"
+        },
+        {
+          "id": "conditions-search",
+          "source": "conditions",
+          "target": "search"
+        },
+        {
+          "id": "twe-search",
+          "source": "twe",
+          "target": "search"
+        },
+        {
+          "id": "search-d-adjust",
+          "source": "search",
+          "target": "d-adjust"
+        },
+        {
+          "id": "d-adjust-adjustments",
+          "label": "Yes",
+          "source": "d-adjust",
+          "target": "adjustments",
+          "type": "smoothstep"
+        }
+      ],
+      "nodes": [
+        {
+          "detail": "project.csv\nNot inventoried yet. A project holds the schedule of items being selected.",
+          "id": "project",
+          "label": "Project with schedule",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "detail": "item.csv\ncustomer, customer_reference, item, service, quantity, quote, industry, pump_type, orientation",
+          "id": "item",
+          "label": "Item",
+          "source": "right",
+          "target": "top",
+          "x": 0,
+          "y": 88
+        },
+        {
+          "detail": "duty.csv\nflow, head, frequency, speeds, synchronous_speed, min_sync_speed, max_sync_speed, speed, min_speed, max_speed, min_frequency, max_frequency",
+          "id": "duty",
+          "label": "Duty point",
+          "source": "right",
+          "target": "left",
+          "x": 200,
+          "y": 88
+        },
+        {
+          "color": "review",
+          "detail": "decision\nYes → Multi-pump system\nNo → Product lines",
+          "id": "quick",
+          "label": "Quick select?",
+          "target": "left",
+          "x": 400,
+          "y": 88
+        },
+        {
+          "detail": "multipump.csv\npumps, suction_type, system_flow, discharge_pressure, suction_pressure_rated, suction_pressure_max, load_profile, system_losses, flow_per_pump, pressure_per_pump",
+          "id": "multipump",
+          "label": "Multi-pump system",
+          "target": "top",
+          "x": 400,
+          "y": 176
+        },
+        {
+          "detail": "twe.csv\nload_profile, operating_time, flow_in, time_in, search_criteria, control_curve, static_head, enable, flow, operating_time, energy_cost",
+          "id": "twe",
+          "label": "True weighted efficiency",
+          "target": "top",
+          "x": 400,
+          "y": 264
+        },
+        {
+          "detail": "product-lines.csv\nend_suction_foot_mounted, sci_pumps, radially_split_multistage, submersibles, axial_flow, demonstration_product, end_suction_foot_mounted_basic, end_suction_foot_mounted_advanced, end_suction_foot_mounted_fixed_motor, end_suction_foot_mounted_loaded_motor_speed, positive_displacement_franklin_test, interstage_takeoff",
+          "id": "product-lines",
+          "label": "Product lines",
+          "target": "top",
+          "x": 0,
+          "y": 176
+        },
+        {
+          "color": "review",
+          "detail": "decision\nYes → Product line options\nNo → Operating constraints",
+          "id": "d-options",
+          "label": "Line has options?",
+          "target": "top",
+          "x": 0,
+          "y": 264
+        },
+        {
+          "detail": "options.csv\nsealing, casing_impeller, impeller_material, clearance, test_numeric_option, run_out_extension, test_acceptance, magnetic_coupling, coupling_length",
+          "id": "options",
+          "label": "Product line options",
+          "target": "left",
+          "x": 200,
+          "y": 264
+        },
+        {
+          "detail": "constraints.csv\nsuction_pressure_rated, suction_pressure_max, npsh_available, pumps_in_parallel, min_bypass_flow",
+          "id": "constraints",
+          "label": "Operating constraints",
+          "target": "top",
+          "x": 0,
+          "y": 352
+        },
+        {
+          "color": "review",
+          "detail": "decision\nYes → NPSH calculator\nNo → Driver",
+          "id": "d-npsh",
+          "label": "Calculate NPSH?",
+          "target": "top",
+          "x": 0,
+          "y": 440
+        },
+        {
+          "detail": "npsh.csv\nliquid, max_temperature, surface_pressure, vapor_pressure, static_height, suction_line_losses, npsh_available, suction_pressure",
+          "id": "npsh",
+          "label": "NPSH available calculator",
+          "target": "left",
+          "x": 200,
+          "y": 440
+        },
+        {
+          "detail": "driver.csv\nsizing, margin, service_factor, power_density, driver_design",
+          "id": "driver",
+          "label": "Driver",
+          "source": "right",
+          "target": "top",
+          "x": 0,
+          "y": 528
+        },
+        {
+          "detail": "fluid.csv\nliquid, description, max_temperature, density_rated, density_max, viscosity, vapor_pressure, viscosity_correction, max_solids_diameter, solids_by_volume, solids_by_weight, froth_factor",
+          "id": "fluid",
+          "label": "Fluid",
+          "target": "left",
+          "x": 200,
+          "y": 528
+        },
+        {
+          "color": "review",
+          "detail": "decision\nYes → Liquid properties\nNo → Slurry check",
+          "id": "d-liquid",
+          "label": "Pick from liquid list?",
+          "target": "top",
+          "x": 0,
+          "y": 616
+        },
+        {
+          "detail": "liquid-properties.csv\nfilter, liquid, temperature, density, viscosity, vapor_pressure, enable",
+          "id": "liquid-properties",
+          "label": "Liquid properties",
+          "target": "left",
+          "x": 200,
+          "y": 616
+        },
+        {
+          "color": "review",
+          "detail": "decision\nYes → Slurry criteria\nNo → Pump constraints",
+          "id": "d-slurry",
+          "label": "Slurry?",
+          "target": "top",
+          "x": 0,
+          "y": 704
+        },
+        {
+          "detail": "slurry.csv\ncalculate_density, calculate_concentration, liquid_density, solids_density, mixture_density, solids_by_volume, solids_by_weight, particle_size_d50, fines_under_75_m, pipe_inner_diameter, pipe_velocity, max_deposit_velocity",
+          "id": "slurry",
+          "label": "Slurry",
+          "target": "left",
+          "x": 200,
+          "y": 704
+        },
+        {
+          "detail": "limits.csv\nnpsh_margin, max_downstream_pressure, min_head_rise_to_shutoff, max_head_rise_to_shutoff, max_shutoff_head, max_specific_speed, max_suction_specific_speed, specific_speed_units, use_discharge_orifice_where_permitted, stable_head_flow_curve_required",
+          "id": "limits",
+          "label": "Pump constraints",
+          "source": "right",
+          "target": "top",
+          "x": 0,
+          "y": 792
+        },
+        {
+          "detail": "specs.csv\nhydraulic_selection, construction",
+          "id": "specs",
+          "label": "Specifications",
+          "target": "left",
+          "x": 200,
+          "y": 792
+        },
+        {
+          "color": "review",
+          "detail": "decision\nYes → API 610 criteria\nNo → General constraints",
+          "id": "d-api",
+          "label": "API 610 spec?",
+          "target": "top",
+          "x": 0,
+          "y": 880
+        },
+        {
+          "detail": "api610.csv\n5_head_increase_by, max_continuous_speed, stable_curve, max_working_pressure, edition, maximum_impeller, specify_blank_stages, blank_stages, specify_trip_speed, trip_speed",
+          "id": "api610",
+          "label": "API 610 criteria",
+          "target": "left",
+          "x": 200,
+          "y": 880
+        },
+        {
+          "detail": "general.csv\nmin_material, multistage_efficiency_search",
+          "id": "general",
+          "label": "General constraints",
+          "target": "top",
+          "x": 0,
+          "y": 968
+        },
+        {
+          "color": "review",
+          "detail": "decision\nYes → System curves, load profiles\nNo → Interstage check",
+          "id": "d-system",
+          "label": "Define system curves?",
+          "target": "top",
+          "x": 0,
+          "y": 1056
+        },
+        {
+          "detail": "system-curves.csv\nset_flow, set_head, label, static_head, flow, head, display",
+          "id": "system-curves",
+          "label": "System curves",
+          "target": "left",
+          "x": 200,
+          "y": 1056
+        },
+        {
+          "detail": "load-profiles.csv\nexpected_pump_life, flow_in, operation_in, rated_speed, total_operation, enable, flow, operation, energy_cost, system_curve",
+          "id": "load-profiles",
+          "label": "Load profiles",
+          "target": "top",
+          "x": 200,
+          "y": 1144
+        },
+        {
+          "color": "review",
+          "detail": "decision\nYes → Interstage take-off\nNo → Head loss check",
+          "id": "d-ito",
+          "label": "Interstage take-off?",
+          "target": "top",
+          "x": 0,
+          "y": 1232
+        },
+        {
+          "detail": "ito.csv\nito_type, head_tolerance, head_tolerance, enable, flow, head",
+          "id": "ito",
+          "label": "Interstage take-off",
+          "target": "left",
+          "x": 200,
+          "y": 1232
+        },
+        {
+          "color": "review",
+          "detail": "decision\nYes → Head loss system … discharge piping\nNo → Multiple conditions check",
+          "id": "d-headloss",
+          "label": "Calculate head loss?",
+          "target": "top",
+          "x": 0,
+          "y": 1320
+        },
+        {
+          "detail": "hl-conditions.csv\nsystem, friction_method, system_type, pipe_size_units, curve_label, show_curve, flow",
+          "id": "hl-conditions",
+          "label": "Head loss system",
+          "target": "left",
+          "x": 200,
+          "y": 1320
+        },
+        {
+          "detail": "hl-liquid.csv\nliquid, description, max_solids_diameter, max_temperature, density_rated, density_max, viscosity, vapor_pressure",
+          "id": "hl-liquid",
+          "label": "Head loss fluid",
+          "target": "top",
+          "x": 200,
+          "y": 1408
+        },
+        {
+          "detail": "hl-diagram.csv\nsuction_height, discharge_height, pump_height, suction_pressure, discharge_pressure, head_loss, static_head, total_head, npsha",
+          "id": "hl-diagram",
+          "label": "Elevations and pressures",
+          "target": "top",
+          "x": 200,
+          "y": 1496
+        },
+        {
+          "detail": "hl-suction.csv\nset_default_size, default_size, recommended_diameter, flow_velocity, total_suction, fitting, material, qty, size, d1, d2, bend_radius, degree, length, roughness, velocity, re, c, k, cv, flow_share, head_loss",
+          "id": "hl-suction",
+          "label": "Suction piping",
+          "target": "top",
+          "x": 200,
+          "y": 1584
+        },
+        {
+          "detail": "hl-discharge.csv\nset_default_size, default_size, recommended_diameter, flow_velocity, total_discharge, total_head_loss, fitting, material, qty, size, d1, d2, bend_radius, degree, length, roughness, velocity, re, c, k, cv, flow_share, head_loss",
+          "id": "hl-discharge",
+          "label": "Discharge piping",
+          "target": "top",
+          "x": 200,
+          "y": 1672
+        },
+        {
+          "color": "review",
+          "detail": "decision\nYes → Conditions\nNo → Search",
+          "id": "d-conditions",
+          "label": "Multiple duty points?",
+          "target": "top",
+          "x": 0,
+          "y": 1760
+        },
+        {
+          "detail": "conditions.csv\nprimary, description, flow, head, max_temperature, density_rated, density_max, viscosity",
+          "id": "conditions",
+          "label": "Conditions",
+          "target": "left",
+          "x": 200,
+          "y": 1760
+        },
+        {
+          "detail": "shell.csv\nsearch_results, performance_curve, general_arrangement",
+          "id": "search",
+          "label": "System runs search",
+          "target": "top",
+          "x": 400,
+          "y": 1848
+        },
+        {
+          "color": "review",
+          "detail": "decision\nYes → Performance adjustments\nNo → Done",
+          "id": "d-adjust",
+          "label": "Adjust performance?",
+          "target": "top",
+          "x": 400,
+          "y": 1936
+        },
+        {
+          "detail": "adjustments.csv\nflow, flow_efficiency_only, flow_end_of_curve_only, head_all_flows, head_rated_flow, efficiency, npsh_required, mcsf, power_loss, torque_loss, comments",
+          "id": "adjustments",
+          "label": "Performance adjustments",
+          "target": "top",
+          "x": 400,
+          "y": 2024
+        }
+      ],
+      "title": "Pump select"
+    },
+    {
+      "edges": [
+        {
+          "id": "click-add-append",
+          "source": "click-add",
+          "target": "append"
+        },
+        {
+          "id": "append-pick-type",
+          "source": "append",
+          "target": "pick-type"
+        },
+        {
+          "id": "pick-type-unlock",
+          "source": "pick-type",
+          "target": "unlock"
+        },
+        {
+          "id": "unlock-enter",
+          "source": "unlock",
+          "target": "enter"
+        },
+        {
+          "id": "enter-recalc",
+          "source": "enter",
+          "target": "recalc"
+        },
+        {
+          "id": "recalc-remove",
+          "source": "recalc",
+          "target": "remove"
+        }
+      ],
+      "nodes": [
+        {
+          "detail": "suction-fittings.csv\nfitting, material, qty, size, d1, d2, bend_radius, degree, length, roughness, velocity, re, c, k, cv, flow_share, head_loss\nPipe, Steel SCH40, , DN100, 4.03, , , , 0.00, 0.00, 2.52, 78389.27, , , , 100, 0.00",
+          "id": "click-add",
+          "label": "User clicks Add fitting",
+          "source": "right",
+          "x": 0,
+          "y": 0
+        },
+        {
+          "detail": "suction-fittings.csv\nfitting, material, qty, size, d1, d2, bend_radius, degree, length, roughness, velocity, re, c, k, cv, flow_share, head_loss\n…\nPipe, Steel SCH40, , DN100, 4.03, , , , , , , , , , , 100,",
+          "id": "append",
+          "label": "System appends a Pipe row",
+          "source": "right",
+          "target": "left",
+          "x": 200,
+          "y": 0
+        },
+        {
+          "detail": "fitting-types.csv\ntype\nPipe\nIsolating Valve\nNon-Return Valve\nElbow\nTransition\nUser Defined\nSundry Losses\nPipe Exit Behavior\nPipe Entrance Behavior\nStrainer",
+          "id": "pick-type",
+          "label": "User picks fitting type",
+          "target": "left",
+          "x": 400,
+          "y": 0
+        },
+        {
+          "detail": "fitting-columns.csv (best guess)\ntype, editable\nPipe, material size length roughness flow_share\nElbow, material qty size bend_radius degree flow_share\nTransition, size d1 d2 degree flow_share\nValves, User Defined, Strainer, qty size k cv flow_share\nSundry Losses, qty k flow_share\nPipe Exit/Entrance, size k flow_share",
+          "id": "unlock",
+          "label": "System unlocks that type's columns",
+          "source": "right",
+          "target": "top",
+          "x": 0,
+          "y": 88
+        },
+        {
+          "detail": "suction-fittings.csv\nfitting, material, qty, size, d1, d2, bend_radius, degree, length, roughness, velocity, re, c, k, cv, flow_share, head_loss\nElbow, Steel SCH40, 2, DN100, 4.03, , 6.00, 90, , , , , , , , 100,",
+          "id": "enter",
+          "label": "User enters values",
+          "source": "right",
+          "target": "left",
+          "x": 200,
+          "y": 88
+        },
+        {
+          "detail": "suction-fittings.csv\nvelocity, re, head_loss → total_suction, total_head_loss, npsha",
+          "id": "recalc",
+          "label": "System recalculates totals",
+          "target": "left",
+          "x": 400,
+          "y": 88
+        },
+        {
+          "detail": "suction-fittings.csv\nrow deleted; totals recalculate",
+          "id": "remove",
+          "label": "User removes a fitting",
+          "target": "top",
+          "x": 0,
+          "y": 176
+        }
+      ],
+      "title": "Add fitting"
+    }
+  ],
+  "links": [
+    {
+      "copy": true,
+      "from": "duty/Flow",
+      "to": "conditions/Flow/0"
+    },
+    {
+      "copy": true,
+      "from": "duty/Flow",
+      "to": "ito/Flow/2"
+    },
+    {
+      "copy": true,
+      "from": "duty/Head",
+      "to": "conditions/Head/0"
+    },
+    {
+      "copy": true,
+      "from": "duty/Head",
+      "to": "ito/Head/2"
+    },
+    {
+      "copy": false,
+      "from": "duty/Frequency",
+      "to": "duty/Synchronous speed"
+    },
+    {
+      "copy": false,
+      "from": "duty/Frequency",
+      "to": "duty/Min sync speed"
+    },
+    {
+      "copy": false,
+      "from": "duty/Frequency",
+      "to": "duty/Max sync speed"
+    },
+    {
+      "copy": true,
+      "from": "liquid-properties/Temperature/1",
+      "to": "fluid/Max temperature"
+    },
+    {
+      "copy": false,
+      "from": "liquid-properties/Density/0",
+      "to": "fluid/Density rated"
+    },
+    {
+      "copy": false,
+      "from": "liquid-properties/Density/1",
+      "to": "fluid/Density max"
+    },
+    {
+      "copy": false,
+      "from": "liquid-properties/Viscosity/0",
+      "to": "fluid/Viscosity"
+    },
+    {
+      "copy": false,
+      "from": "liquid-properties/Vapor pressure/0",
+      "to": "fluid/Vapor pressure"
+    },
+    {
+      "copy": true,
+      "from": "fluid/Liquid",
+      "to": "npsh/Liquid"
+    },
+    {
+      "copy": true,
+      "from": "fluid/Max temperature",
+      "to": "npsh/Max temperature"
+    },
+    {
+      "copy": true,
+      "from": "fluid/Vapor pressure",
+      "to": "npsh/Vapor pressure"
+    },
+    {
+      "copy": true,
+      "from": "fluid/Max temperature",
+      "to": "conditions/Max temperature/0"
+    },
+    {
+      "copy": true,
+      "from": "fluid/Density rated",
+      "to": "conditions/Density rated/0"
+    },
+    {
+      "copy": true,
+      "from": "fluid/Density max",
+      "to": "conditions/Density max/0"
+    },
+    {
+      "copy": true,
+      "from": "fluid/Viscosity",
+      "to": "conditions/Viscosity/0"
+    },
+    {
+      "copy": false,
+      "from": "npsh/Surface pressure",
+      "to": "npsh/NPSH available"
+    },
+    {
+      "copy": false,
+      "from": "npsh/Static height",
+      "to": "npsh/NPSH available"
+    },
+    {
+      "copy": false,
+      "from": "npsh/Suction line losses",
+      "to": "npsh/NPSH available"
+    },
+    {
+      "copy": false,
+      "from": "npsh/Vapor pressure",
+      "to": "npsh/NPSH available"
+    },
+    {
+      "copy": false,
+      "from": "npsh/NPSH available",
+      "to": "constraints/NPSH available"
+    },
+    {
+      "copy": false,
+      "from": "slurry/Liquid density",
+      "to": "slurry/Mixture density"
+    },
+    {
+      "copy": false,
+      "from": "slurry/Solids density",
+      "to": "slurry/Mixture density"
+    },
+    {
+      "copy": false,
+      "from": "slurry/Solids by volume",
+      "to": "slurry/Solids by weight"
+    },
+    {
+      "copy": false,
+      "from": "system-curves/Label/0",
+      "to": "load-profiles/System curve/0"
+    },
+    {
+      "copy": false,
+      "from": "hl-suction/Total suction",
+      "to": "hl-diagram/Head loss"
+    },
+    {
+      "copy": false,
+      "from": "hl-discharge/Total discharge",
+      "to": "hl-diagram/Head loss"
+    },
+    {
+      "copy": false,
+      "from": "hl-diagram/Head loss",
+      "to": "hl-diagram/Total head"
+    },
+    {
+      "copy": false,
+      "from": "hl-diagram/Static head",
+      "to": "hl-diagram/Total head"
+    },
+    {
+      "copy": false,
+      "from": "hl-diagram/Total head",
+      "to": "duty/Head"
+    },
+    {
+      "copy": false,
+      "from": "hl-diagram/NPSHa",
+      "to": "constraints/NPSH available"
+    },
+    {
+      "copy": true,
+      "from": "hl-diagram/Suction pressure",
+      "to": "constraints/Suction pressure rated"
+    },
+    {
+      "copy": false,
+      "from": "multipump/System flow",
+      "to": "multipump/Flow per pump"
+    },
+    {
+      "copy": false,
+      "from": "multipump/Pumps",
+      "to": "multipump/Flow per pump"
+    },
+    {
+      "copy": false,
+      "from": "multipump/Discharge pressure",
+      "to": "multipump/Pressure per pump"
+    }
+  ]
+}

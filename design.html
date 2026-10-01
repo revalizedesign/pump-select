@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pump Select Design</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" />
+    <link rel="stylesheet" href="modern.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        background: #fafafa;
+        color: #0a0a0a;
+        font-family: Inter, system-ui, sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 1.5rem;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 0 auto;
+        max-width: 60rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      h2 {
+        border-bottom: 1px solid #e5e5e5;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        padding-bottom: 0.5rem;
+      }
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .lede {
+        color: #525252;
+        max-width: 44rem;
+      }
+      .grid2 {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+      }
+      .pair {
+        color: #525252;
+        display: grid;
+        gap: 0.25rem 0.75rem;
+        grid-template-columns: 4rem 1fr;
+      }
+      .tag {
+        color: #737373;
+        font-size: 12px;
+        font-weight: 500;
+      }
+      .demo {
+        align-items: flex-start;
+        background: #fafafa;
+        border: 1px dashed #e5e5e5;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+      }
+      .inline {
+        position: static;
+        transform: none;
+      }
+      .swatches {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+      .swatch {
+        align-items: center;
+        border-radius: 0.5rem;
+        color: #fff;
+        display: flex;
+        font-size: 12px;
+        font-weight: 500;
+        height: 3rem;
+        justify-content: center;
+        width: 7rem;
+      }
+      .figma {
+        align-items: center;
+        background: #2c2c2c;
+        border-radius: 0.5rem;
+        color: #e5e5e5;
+        display: grid;
+        font-size: 11px;
+        gap: 0.5rem;
+        grid-template-columns: 3rem 1fr;
+        padding: 0.75rem;
+        width: 16rem;
+      }
+      .figma-value {
+        background: #383838;
+        border-radius: 0.25rem;
+        padding: 0.25rem 0.5rem;
+      }
+      .figma-bound {
+        align-items: center;
+        background: #383838;
+        border: 1px solid #4a4a4a;
+        border-radius: 0.25rem;
+        display: flex;
+        gap: 0.375rem;
+        padding: 0.25rem 0.5rem;
+      }
+      .sheet {
+        border-collapse: collapse;
+        font-size: 12px;
+      }
+      .sheet td,
+      .sheet th {
+        border: 1px solid #e5e5e5;
+        padding: 0.25rem 0.75rem;
+        text-align: left;
+      }
+      .sheet th {
+        background: #f5f5f5;
+        color: #737373;
+        font-weight: 500;
+      }
+      .muted-cell {
+        color: #737373;
+      }
+      .ref-a {
+        box-shadow: inset 0 0 0 2px #2563eb;
+      }
+      .ref-b {
+        box-shadow: inset 0 0 0 2px #dc2626;
+      }
+      .ref-cell {
+        box-shadow: inset 0 0 0 2px #16a34a;
+      }
+      .formula {
+        align-items: center;
+        border: 1px solid #e5e5e5;
+        display: flex;
+        font-family: ui-monospace, monospace;
+        font-size: 12px;
+        gap: 0.75rem;
+        margin-bottom: 0.25rem;
+        padding: 0.25rem 0.5rem;
+      }
+      .notion {
+        display: grid;
+        font-size: 13px;
+        gap: 0.375rem 1rem;
+        grid-template-columns: 8rem 1fr;
+      }
+      .notion-key {
+        color: #737373;
+      }
+      .mini {
+        height: 8rem;
+        width: 22rem;
+      }
+    </style>
+    <link rel="stylesheet" href="nav.css" />
+  </head>
+  <body>
+    <header id="topbar"><strong>Pump select</strong><a href="index.html">Workflow</a><a href="compare.html">Compare</a><span aria-current="page">Design</span></header>
+    <main>
+      <header>
+        <h1>Pump Select Design</h1>
+        <p class="lede">Decisions behind the modern version on <a href="compare.html">the compare page</a>. Each item explains what we changed from legacy IntelliQuip and why.</p>
+      </header>
+
+      <h2>Removals</h2>
+      <p class="lede">Legacy controls we intentionally don't carry forward. Each one is still listed on the compare page so the inventory stays 1:1.</p>
+      <div class="grid2">
+        <div class="card">
+          <h3>Use service factor</h3>
+          <div class="pair"><span class="tag">Legacy</span><span>A checkbox next to the Service factor dropdown decides whether the factor applies.</span><span class="tag">Modern</span><span>One Service factor dropdown: None, 1.15, 1.20, 1.25.</span><span class="tag">Why</span><span>Off just means 1.00. One control states the value directly, with no separate switch to find or keep in order.</span></div>
+        </div>
+        <div class="card">
+          <h3>Transfer to COS</h3>
+          <div class="pair"><span class="tag">Legacy</span><span>A button under the Head Loss Module copies its results back to Conditions of Service.</span><span class="tag">Modern</span><span>Removed. Head loss results stay linked to Head, NPSH available and Suction pressure (see Controlled inputs).</span><span class="tag">Why</span><span>The button only exists because the calculator is a separate form. Manual syncing means values silently go stale when someone forgets to click it.</span></div>
+        </div>
+        <div class="card">
+          <h3>50 Hz and 60 Hz speed fields</h3>
+          <div class="pair"><span class="tag">Legacy</span><span>Separate synchronous speed fields for each supply frequency.</span><span class="tag">Modern</span><span>One field per purpose whose options follow Frequency.</span><span class="tag">Why</span><span>Only one set is ever relevant, so the second set is noise.</span></div>
+        </div>
+        <div class="card">
+          <h3>Per-field Calculate radios</h3>
+          <div class="pair"><span class="tag">Legacy</span><span>A Calculate radio next to each of five slurry values.</span><span class="tag">Modern</span><span>Two dropdowns: Calculate density and Calculate concentration.</span><span class="tag">Why</span><span>The five radios are really two exclusive groups. A dropdown names each choice once instead of scattering it across rows.</span></div>
+        </div>
+        <div class="card">
+          <h3>Deprecated controls</h3>
+          <div class="pair"><span class="tag">Legacy</span><span>Cancel, Next, Next button blink, Language selector display, Selector callback max.</span><span class="tag">Modern</span><span>Not ported.</span><span class="tag">Why</span><span>Used by 0 of 156 customers.</span></div>
+        </div>
+      </div>
+
+      <h2>Controlled inputs</h2>
+      <p class="lede">Many fields are calculated from other fields, often ones far away on the page or in a different tool. Liquid properties fill density and viscosity. Head loss fills Head. Duty point fills the first row of Multiple conditions. People need to see that a field is part of a relationship, find the other end, and know when a value no longer matches its calculation.</p>
+
+      <h3>Color: teal, not purple</h3>
+      <p class="lede">Purple has become the industry shorthand for AI, and this product family has AI agents, so purple would make a calculated value read as AI-generated. Blue already means links, focus and primary actions. Amber is reserved for the overridden state, red for errors, green for success. Teal is unclaimed and reads as "systematic". It's one token (<code>--relation</code>) so it's easy to change.</p>
+      <div class="swatches">
+        <div class="swatch" style="background: #0d9488">Relation</div>
+        <div class="swatch" style="background: #b45309">Overridden</div>
+        <div class="swatch" style="background: #7c3aed">AI (avoid)</div>
+        <div class="swatch" style="background: #2563eb">Links, focus</div>
+      </div>
+
+      <h3>How others do it</h3>
+      <div class="grid2">
+        <div class="card">
+          <h3>Figma: bound variables</h3>
+          <div class="figma"><span>Gap</span><span class="figma-value">16</span><span>Padding</span><span class="figma-bound">⬡ spacing/md</span></div>
+          <p class="muted">A property bound to a variable swaps its raw number for a named pill with a hexagon. You can see at a glance which values come from somewhere else, and a detach action breaks the binding.</p>
+        </div>
+        <div class="card">
+          <h3>Airtable and Notion: computed field types</h3>
+          <table class="sheet"><tr><th>Aa Part</th><th># Qty</th><th>↗ Supplier price</th><th>ƒ Total</th></tr><tr><td>Impeller</td><td>2</td><td class="muted-cell">$410</td><td class="muted-cell">$820</td></tr></table>
+          <div class="notion"><span class="notion-key">Σ Rollup</span><span>3 parts</span><span class="notion-key">ƒ Margin</span><span>18%</span></div>
+          <p class="muted">Every field type has an icon in its header or label: lookup, rollup, formula. Computed values are gray and can't be typed over, so the icon explains why.</p>
+        </div>
+        <div class="card">
+          <h3>Spreadsheets: formulas and references</h3>
+          <div class="formula"><span>D2</span><span>ƒx</span><span>=B2*C2</span></div>
+          <table class="sheet"><tr><th></th><th>B</th><th>C</th><th>D</th></tr><tr><th>2</th><td class="ref-a">2</td><td class="ref-b">410</td><td class="ref-cell">820</td></tr></table>
+          <p class="muted">Selecting a calculated cell shows its formula, and each referenced cell gets a matching colored outline. Trace precedents and dependents draws arrows between them.</p>
+        </div>
+      </div>
+
+      <h3>Our pattern</h3>
+      <p class="lede">All of these are live on <a href="compare.html">the compare page</a>. Try changing Flow in Duty point, Max temperature in Liquid properties, or typing over Viscosity in Fluid.</p>
+      <div class="grid2">
+        <div class="card">
+          <h3>1. Field marker</h3>
+          <div class="demo">
+            <label class="field">Head<span class="control derived"><input value="100" /><button class="relation" type="button">ƒx</button><span class="unit">ft</span></span></label>
+            <label class="field">Flow<span class="control"><input value="100" /><button class="relation" type="button">→</button><span class="unit">USgpm</span></span></label>
+          </div>
+          <p class="muted"><strong>Affordance:</strong> calculated fields get a teal tint and an ƒx button; fields that feed others get a → button. <strong>Behavior:</strong> the button opens the relationship popover. A field can show both roles.</p>
+        </div>
+        <div class="card">
+          <h3>2. Popover with jump links</h3>
+          <div class="demo">
+            <div class="popover inline"><p class="popover-title">Calculated from:</p><button class="popover-link">Liquid properties › Temperature (Maximum)</button><p class="popover-title">Calculates to:</p><button class="popover-link">NPSH available calculator › Max temperature</button><button class="popover-link">Conditions › Max temperature (1)</button></div>
+          </div>
+          <p class="muted"><strong>Affordance:</strong> "Calculated from:" and "Calculates to:" lists, each entry named by card and field. <strong>Behavior:</strong> clicking an entry jumps to that field. Hidden fields say so instead of jumping.</p>
+        </div>
+        <div class="card">
+          <h3>3. Jump and return</h3>
+          <div class="demo"><button class="pill back inline">← Back to Fluid › Max temperature</button></div>
+          <p class="muted"><strong>Affordance:</strong> a back pill in the bottom-left corner. <strong>Behavior:</strong> a jump scrolls the target to the middle of the screen, focuses it and flashes it. The pill returns you to where you started, then disappears.</p>
+        </div>
+        <div class="card">
+          <h3>4. Dependent highlighting</h3>
+          <div class="demo">
+            <label class="field">Viscosity<span class="control derived related"><input value="1.00" /><button class="relation" type="button">ƒx</button><span class="unit">cP</span></span></label>
+            <button class="pill chip inline">2 related off screen ↓</button>
+          </div>
+          <p class="muted"><strong>Affordance:</strong> while you're in a field, every related field gets a teal ring. <strong>Behavior:</strong> if any are off screen, a chip in the bottom-right counts them and jumps to the first.</p>
+        </div>
+        <div class="card">
+          <h3>5. Overridden state</h3>
+          <div class="demo">
+            <label class="field">Viscosity<span class="control overridden"><input value="1.20" /><button class="relation relation-override" type="button">≠</button><span class="unit">cP</span></span></label>
+            <div class="popover inline"><p class="popover-title">Calculated from:</p><button class="popover-link">Liquid properties › Viscosity (Rated)</button><button class="button">Use calculated</button></div>
+          </div>
+          <p class="muted"><strong>Affordance:</strong> typing over a calculated value turns the field amber with a ≠ marker. <strong>Behavior:</strong> the field stops following its source. "Use calculated" in the popover restores the link and the calculated value.</p>
+        </div>
+        <div class="card">
+          <h3>6. Change notice</h3>
+          <div class="demo"><button class="pill toast inline">Max temperature updated 2 fields · Jump</button></div>
+          <p class="muted"><strong>Affordance:</strong> calculated fields flash teal when their value changes. <strong>Behavior:</strong> if any changed fields are off screen, a toast says how many and jumps to them. Changes chain, so a change can update fields that depend on other calculated fields.</p>
+        </div>
+        <div class="card">
+          <h3>7. Relationship overlay</h3>
+          <div class="demo">
+            <svg class="mini" viewBox="0 0 352 128"><rect x="0.5" y="12.5" width="120" height="36" rx="8" fill="#fff" stroke="#e5e5e5" /><rect x="0.5" y="80.5" width="120" height="36" rx="8" fill="#f0fdfa" stroke="#99f6e4" /><path class="overlay-path" d="M121 30 C200 30 200 98 121 98" /><text x="12" y="35" font-size="12">Flow</text><text x="12" y="103" font-size="12">Flow (row 1)</text></svg>
+            <button class="pill overlay-toggle inline">Show relationships</button>
+          </div>
+          <p class="muted"><strong>Affordance:</strong> a "Show relationships" toggle in the top-right corner. <strong>Behavior:</strong> draws a teal curve between every source and calculated field on the page. Useful for auditing and onboarding, too noisy to leave on.</p>
+        </div>
+      </div>
+
+      <h2>Data validation requests to product / engineering</h2>
+      <p class="lede">The controlled-input pattern only works if the data model says which fields are calculated from which. Today the compare page runs on 38 relationships we inferred from legacy screens. Before we commit to the pattern, we need the real equivalents of <code>calculatedFrom</code> and <code>calculatesTo</code> for every relevant field in the initial delivery scope (Release A: app shell, duty point, fluid, speed configuration, operating constraints, driver sizing, selection filters).</p>
+      <div class="grid2">
+        <div class="card">
+          <h3>For each calculated field, we need</h3>
+          <ul class="muted">
+            <li>The fields it's calculated from, including fields on other screens or tools.</li>
+            <li>The fields it calculates to, so we can show "Calculates to:" without inverting a formula.</li>
+            <li>Whether it's a direct copy, a formula, or a lookup (for example, the liquid property database).</li>
+            <li>Whether users can override it, and whether an override survives later changes to its sources.</li>
+            <li>When the link applies. Some links only exist while a tool is in use, like head loss filling Head.</li>
+            <li>When it recalculates: on every change, on submit, or on the next search.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Relationships we assumed and need confirmed</h3>
+          <ul class="muted">
+            <li>Liquid type and temperatures → density, viscosity, vapor pressure.</li>
+            <li>Frequency → which synchronous speeds are offered.</li>
+            <li>NPSH calculator inputs → NPSH available.</li>
+            <li>Head loss results → Head, NPSH available, suction pressure (the old Transfer to COS mapping).</li>
+            <li>Duty point → Multiple conditions row 1 and interstage final discharge.</li>
+            <li>Margin, service factor and density strategy → driver size.</li>
+          </ul>
+          <p class="muted">Without this list, the UI can show the pattern but can't promise every calculated field is marked, which defeats the point of marking any of them.</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

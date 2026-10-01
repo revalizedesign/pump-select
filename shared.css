@@ -1,0 +1,135 @@
+:root {
+  --color-border: #e2e0db;
+  --color-edge: #b1b1b7;
+  --color-muted: #666;
+  --color-text: #222;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  color: var(--color-text);
+  display: flex;
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+  justify-content: center;
+  padding: 1.5rem;
+}
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 80rem;
+  min-width: 0;
+}
+h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+header p {
+  color: var(--color-muted);
+}
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+pre {
+  background: #f8f8f6;
+  border-radius: 4px;
+  font-family: ui-monospace, monospace;
+  font-size: 12px;
+  line-height: 18px;
+  overflow-x: auto;
+  padding: 0.5rem;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+}
+.card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.card p {
+  color: var(--color-muted);
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  line-height: 20px;
+}
+li strong {
+  font-weight: 600;
+}
+.clickable {
+  cursor: pointer;
+}
+.edge {
+  fill: none;
+  stroke: var(--color-edge);
+}
+.edge-label {
+  dominant-baseline: central;
+  font-size: 10px;
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-width: 6px;
+  text-anchor: middle;
+}
+.handle {
+  fill: var(--color-text);
+}
+.node-box {
+  stroke: var(--color-border);
+}
+.node-icon {
+  opacity: 0.5;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.node-label {
+  display: flex;
+  font-size: 13px;
+  height: 48px;
+  line-height: 1rem;
+  padding: 0.5rem 1.25rem 0.5rem 0.75rem;
+  position: relative;
+  width: 10rem;
+}
+.flow {
+  display: flex;
+  gap: 2rem;
+}
+.flow-main {
+  flex: 1;
+  min-width: 35rem;
+}
+.flow-side {
+  flex: 1 1 24rem;
+  max-width: 24rem;
+  overflow: hidden;
+}
+.selected {
+  stroke: var(--color-text);
+}
